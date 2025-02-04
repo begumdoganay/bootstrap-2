@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Project Banner](./assests/images/viyana.jpg)
+![Project Banner]
 
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-purple.svg)](https://getbootstrap.com)
 [![Font Awesome](https://img.shields.io/badge/Font%20Awesome-6.0.0-blue.svg)](https://fontawesome.com)
