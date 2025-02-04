@@ -2,11 +2,22 @@
 
 <div align="center">
 
-![Project Banner]
+```
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║                     ATATÜRK'ÜN AVRUPA SEYAHATLERİ                              ║
+║                                                                                ║
+║                        1913 ──── 1919                                          ║
+║                                                                                ║
+║           SOFYA  •  BERLİN  •  VİYANA  •  KARLSBAD  •  PARİS                   ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+```
 
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-purple.svg)](https://getbootstrap.com)
-[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-6.0.0-blue.svg)](https://fontawesome.com)
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![Font Awesome](https://img.shields.io/badge/Font_Awesome-6.0.0-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white)](https://fontawesome.com)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://choosealicense.com/licenses/mit/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3.org/html/)
 
 </div>
 
