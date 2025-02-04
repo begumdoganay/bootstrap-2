@@ -3,15 +3,15 @@
 <div align="center">
 
 ```
-╔════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                ║
-║                     ATATÜRK'ÜN AVRUPA SEYAHATLERİ                              ║
-║                                                                                ║
-║                        1913 ──── 1919                                          ║
-║                                                                                ║
-║           SOFYA  •  BERLİN  •  VİYANA  •  KARLSBAD  •  PARİS                   ║
-║                                                                                ║
-╚════════════════════════════════════════════════════════════════════════════════╝
+            ╔════════════════════════════════════════════════════════════════════════════════╗
+            ║                                                                                ║
+            ║                     ATATÜRK'ÜN AVRUPA SEYAHATLERİ                              ║
+            ║                                                                                ║
+            ║                        1913 ──── 1919                                          ║
+            ║                                                                                ║
+            ║           SOFYA  •  BERLİN  •  VİYANA  •  KARLSBAD  •  PARİS                   ║
+            ║                                                                                ║
+            ╚════════════════════════════════════════════════════════════════════════════════╝
 ```
 
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
