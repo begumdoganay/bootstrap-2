@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karlsbad'da Tedavi Günleri | Atatürk'ün Avrupa Seyahatleri</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/api/placeholder/1920/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        .treatment-card {
+            transition: transform 0.3s ease;
+        }
+        .treatment-card:hover {
+            transform: translateY(-5px);
+        }
+        .bg-spa {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Atatürk'ün Avrupa Seyahatleri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sofya.html">Sofya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="berlin.html">Berlin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viyana.html">Viyana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paris.html">Paris</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="karlsbad.html">Karlsbad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Karlsbad</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 mb-3">Karlsbad'da Tedavi Günleri</h1>
+                    <div class="text-white-50">
+                        <i class="fas fa-calendar-alt me-2"></i>1918
+                        <i class="fas fa-clock ms-3 me-2"></i>Okuma Süresi: 8 dakika
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <span class="badge bg-primary p-3 rounded-pill">
+                        <i class="fas fa-map-marker-alt me-2"></i>Karlsbad (Karlovy Vary), Çekya
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Introduction -->
+        <section class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm">
+                    <img src="/api/placeholder/800/400" class="card-img-top" alt="Tarihi Karlsbad kaplıcaları">
+                    <div class="card-body">
+                        <p class="lead">1918 yılında, sağlık tedavisi için Avrupa'nın en ünlü kaplıca şehri Karlsbad'a gelen Mustafa Kemal, burada hem tedavi gördü hem de modern sağlık hizmetlerini yakından inceleme fırsatı buldu.</p>
+                        
+                        <div class="alert alert-info mt-4">
+                            <h5 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Karlsbad Ziyaretinin Önemi</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-check-circle me-2"></i>Sağlık tedavisi</li>
+                                <li><i class="fas fa-check-circle me-2"></i>Modern tıp uygulamaları</li>
+                                <li><i class="fas fa-check-circle me-2"></i>Sağlık turizmi gözlemleri</li>
+                                <li><i class="fas fa-check-circle me-2"></i>Uluslararası ortam</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thermal Sources -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-hot-tub text-primary"></i>
+                Şifalı Sular ve Tedavi Yöntemleri
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm treatment-card">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-water text-primary"></i>
+                            </div>
+                            <h3 class="h4">Termal Kaynaklar</h3>
+                            <p class="text-muted">Karlsbad'ın dünyaca ünlü 12 termal kaynağı ve mineralli suları, çeşitli hastalıkların tedavisinde kullanılıyordu.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Mineralli su içme kürleri</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Termal su banyoları</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Doğal terapi yöntemleri</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm treatment-card">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-procedures text-primary"></i>
+                            </div>
+                            <h3 class="h4">Tedavi Programları</h3>
+                            <p class="text-muted">Modern tıp ve geleneksel kaplıca tedavilerinin bir arada uygulandığı kapsamlı sağlık programları.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Fizik tedavi uygulamaları</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Masaj ve rehabilitasyon</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Özel diyet programları</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Health Facilities -->
+        <section class="bg-spa py-5 mb-5">
+            <div class="container">
+                <h2 class="text-center mb-4">
+                    <i class="fas fa-hospital text-primary"></i>
+                    Modern Sağlık Tesisleri
+                </h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="/api/placeholder/600/400" class="img-fluid rounded shadow" alt="Karlsbad tedavi merkezi">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="h4 mb-4">Sağlık Altyapısı</h3>
+                        <p class="text-muted">Karlsbad'ın modern sağlık tesisleri ve tedavi merkezleri, dönemin en gelişmiş tıbbi teknolojileri ve uzman kadrosuyla hizmet veriyordu.</p>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-clinic-medical fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h6 class="mb-0">Modern Hastaneler</h6>
+                                        <small class="text-muted">İleri teknoloji</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-user-md fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h6 class="mb-0">Uzman Hekimler</h6>
+                                        <small class="text-muted">Deneyimli kadro</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- City Life -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-city text-primary"></i>
+                Kaplıca Şehrinde Yaşam
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hotel fa-3x text-primary mb-3"></i>
+                            <h4 class="h5">Konaklama</h4>
+                            <p class="text-muted small">Lüks oteller ve sanatoryumlar dönemin en modern imkanlarını sunuyordu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-utensils fa-3x text-primary mb-3"></i>
+                            <h4 class="h5">Gastronomi</h4>
+                            <p class="text-muted small">Sağlıklı beslenme ve özel diyet programları uygulanıyordu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tree fa-3x text-primary mb-3"></i>
+                            <h4 class="h5">Rekreasyon</h4>
+                            <p class="text-muted small">Geniş parklar ve yürüyüş alanları tedavi sürecini destekliyordu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Environment -->
+        <section class="bg-light py-5 rounded">
+            <div class="container">
+                <h2 class="text-center mb-4">
+                    <i class="fas fa-users text-primary"></i>
+                    Sosyal Ortam
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="text-center lead">Avrupa'nın seçkin tabakasının tercih ettiği Karlsbad, kozmopolit bir atmosfere sahipti. Tedavi sürecinde farklı ülkelerden gelen konuklarla tanışma ve sosyal ilişkiler kurma fırsatı buldu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Atatürk'ün Avrupa Seyahatleri</h5>
+                    <p>Modern Türkiye'nin kurucusunun Avrupa'daki izleri ve deneyimleri</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Hızlı Erişim</h5>

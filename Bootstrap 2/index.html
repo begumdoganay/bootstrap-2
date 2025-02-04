@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atatürk'ün Avrupa Seyahatleri</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1920/800');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 150px 0;
+            position: relative;
+        }
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #dee2e6;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        .timeline-item:nth-child(odd) {
+            padding-right: calc(50% + 2rem);
+        }
+        .timeline-item:nth-child(even) {
+            padding-left: calc(50% + 2rem);
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #0d6efd;
+            top: 0;
+        }
+        .timeline-item:nth-child(odd)::before {
+            right: calc(50% - 8px);
+        }
+        .timeline-item:nth-child(even)::before {
+            left: calc(50% - 8px);
+        }
+        .blog-card {
+            transition: transform 0.3s ease;
+            border: none;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-card .card-img-container {
+            height: 250px;
+            overflow: hidden;
+        }
+        .blog-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover img {
+            transform: scale(1.05);
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .stats-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            background: white;
+            transition: transform 0.3s ease;
+        }
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+        .featured-section {
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-landmark me-2"></i>
+                Atatürk'ün Avrupa Seyahatleri
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sofya.html">Sofya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="berlin.html">Berlin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viyana.html">Viyana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paris.html">Paris</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="karlsbad.html">Karlsbad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-3 mb-4 fw-bold">Mustafa Kemal Atatürk'ün Avrupa Seyahatleri</h1>
+                    <p class="lead mb-4">Modern Türkiye'nin kurucusunun 1913-1919 yılları arasında Avrupa'nın farklı şehirlerinde edindiği deneyimler ve gözlemler</p>
+                    <a href="#timeline" class="btn btn-primary btn-lg">
+                        <i class="fas fa-clock me-2"></i>
+                        Seyahat Kronolojisi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="stat-item shadow-sm">
+                        <i class="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
+                        <h3 class="h2 mb-2">5</h3>
+                        <p class="text-muted mb-0">Ziyaret Edilen Şehir</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item shadow-sm">
+                        <i class="fas fa-calendar-alt fa-3x text-primary mb-3"></i>
+                        <h3 class="h2 mb-2">6</h3>
+                        <p class="text-muted mb-0">Yıllık Süreç</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item shadow-sm">
+                        <i class="fas fa-file-alt fa-3x text-primary mb-3"></i>
+                        <h3 class="h2 mb-2">100+</h3>
+                        <p class="text-muted mb-0">Diplomatik Rapor</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item shadow-sm">
+                        <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                        <h3 class="h2 mb-2">50+</h3>
+                        <p class="text-muted mb-0">Resmi Görüşme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="featured-section">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-history text-primary me-2"></i>
+                Seyahat Kronolojisi
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary">1913-1915</span>
+                                <h3 class="h5 ms-3 mb-0">Sofya</h3>
+                            </div>
+                            <p class="mb-0">Askeri Ataşe olarak görev yaptığı dönem</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary">1916</span>
+                                <h3 class="h5 ms-3 mb-0">Berlin</h3>
+                            </div>
+                            <p class="mb-0">Alman ordusunda incelemeler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary">1918</span>
+                                <h3 class="h5 ms-3 mb-0">Viyana</h3>
+                            </div>
+                            <p class="mb-0">Kültür ve sanat incelemeleri</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary">1918</span>
+                                <h3 class="h5 ms-3 mb-0">Karlsbad</h3>
+                            </div>
+                            <p class="mb-0">Sağlık tedavisi ve kaplıca kürü</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <span class="badge bg-primary">1919</span>
+                                <h3 class="h5 ms-3 mb-0">Paris</h3>
+                            </div>
+                            <p class="mb-0">Modernleşme ve toplum yapısı incelemeleri</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Posts -->
+    <section class="container py-5">
+        <h2 class="text-center mb-5">
+            <i class="fas fa-book-open text-primary me-2"></i>
+            Son Yazılar
+        </h2>
+        <div class="row g-4">
+            <!-- Paris Post -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card blog-card shadow-sm h-100">
+                    <div class="card-img-container">
+                        <img src="./assests/images/paris.jpg" alt="Paris">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-primary">Paris</span>
+                            <small class="text-muted ms-3">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                1919
+                            </small>
+                        </div>
+                        <h3 class="h5 card-title">Paris'te Modernleşme İzlenimleri</h3>
+                        <p class="card-text">1919 yılında Paris'e gelen Mustafa Kemal, şehrin modern yapısını, eğitim kurumlarını ve sosyal yaşamını yakından inceleme fırsatı buldu...</p>
+                        <a href="paris.html" class="btn btn-outline-primary">
+                            Devamını Oku
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Berlin Post -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card blog-card shadow-sm h-100">
+                    <div class="card-img-container">
+                        <img src="./assests/images/berlin3.jpeg" alt="Berlin">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-primary">Berlin</span>
+                            <small class="text-muted ms-3">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                1916
+                            </small>
+                        </div>
+                        <h3 class="h5 card-title">Berlin'de Askeri İncelemeler</h3>
+                        <p class="card-text">Alman ordusunun modernizasyonu ve askeri teknolojisi hakkında detaylı incelemelerde bulundu...</p>
+                        <a href="berlin.html" class="btn btn-outline-primary">
+                            Devamını Oku
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Viyana Post -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card blog-card shadow-sm h-100">
+                    <div class="card-img-container">
+                        <img src="./assests/images/viyana2.jpg" alt="Viyana">
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-primary">Viyana</span>
+                            <small class="text-muted ms-3">
+                                <i class="fas fa-calendar-alt me-1"></i>
+                                1918
+                            </small>
+                        </div>
+                        <h3 class="h5 card-title">Viyana'da Kültür ve Sanat</h3>
+                        <p class="card-text">Habsburg başkentinde müzik, opera ve güzel sanatlar alanında gözlemlerde bulundu...</p>
+                        <a href="viyana.html" class="btn btn-outline-primary">
+                            Devamını Oku
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Hakkında</h5>
+                    <p>Modern Türkiye'nin kurucusunun Avrupa'daki izleri ve deneyimleri</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-3">Hızlı Erişim</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Ana Sayfa</a></li>
+                        <li class="mb-2"><a href="sofya.html" class="text-light text-decoration-none">Sofya</a></li>
+                        <li class="mb-2"><a href="berlin.html" class="text-light text-decoration-none">Berlin</a></li>
+                        <li class="mb-2"><a href="viyana.html" class="text-light text-decoration-none">Viyana</a></li>
+                        <li class="mb-2"><a href="paris.html" class="text-light text-decoration-none">Paris</a></li>
+                        <li class="mb-2"><a href="karlsbad.html" class="text-light text-decoration-none">Karlsbad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">İletişim</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@ataturkavrupa.com" class="text-light text-decoration-none">info@ataturkavrupa.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2"></i>
+                            <a href="tel:+901234567890" class="text-light text-decoration-none">+90 123 456 7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Atatürk Bulvarı No:123, Ankara
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Atatürk'ün Avrupa Anıları. Tüm hakları saklıdır.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Gizlilik Politikası</a>
+                    <a href="#" class="text-light text-decoration-none">Kullanım Şartları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="backToTop" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Back to Top Button
+        let backToTopBtn = document.getElementById("backToTop");
+        
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Enable tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+</html>

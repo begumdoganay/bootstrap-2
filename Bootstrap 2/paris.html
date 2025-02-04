@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris'te Modernleşme İzlenimleri | Atatürk'ün Avrupa Seyahatleri</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/api/placeholder/1920/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        .timeline-item {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background-color: #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Atatürk'ün Avrupa Seyahatleri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sofya.html">Sofya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="berlin.html">Berlin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viyana.html">Viyana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="paris.html">Paris</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="karlsbad.html">Karlsbad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero-header mb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Paris</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 mb-3">Paris'te Modernleşme İzlenimleri</h1>
+                    <div class="text-white-50">
+                        <i class="fas fa-calendar-alt me-2"></i>1919
+                        <i class="fas fa-clock ms-3 me-2"></i>Okuma Süresi: 8 dakika
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <span class="badge bg-primary p-3 rounded-pill">
+                        <i class="fas fa-map-marker-alt me-2"></i>Paris, Fransa
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Introduction -->
+        <section class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm">
+                    <img src="/api/placeholder/800/400" class="card-img-top" alt="1919 yılında Paris">
+                    <div class="card-body">
+                        <p class="lead">1919 yılında Paris'e gelen Mustafa Kemal, dönemin en modern ve kozmopolit şehirlerinden birinde bulunmanın heyecanını yaşadı. "Işıklar Şehri" olarak anılan Paris, onun modernleşme vizyonuna önemli katkılar sağlayacaktı.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="row g-4 mb-5">
+            <div class="col-12">
+                <h2 class="text-center mb-4">
+                    <i class="fas fa-university text-primary"></i>
+                    Eğitim Kurumlarında İncelemeler
+                </h2>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="feature-icon bg-primary bg-gradient text-white mb-3">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h3 class="card-title h5">Sorbonne Üniversitesi</h3>
+                        <p class="card-text">Fransa'nın en prestijli eğitim kurumunda modern eğitim sistemini inceledi. Özellikle laik eğitim modeli ve bilimsel yaklaşımı detaylı şekilde inceledi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="feature-icon bg-primary bg-gradient text-white mb-3">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="card-title h5">Fransız Bilimler Akademisi</h3>
+                        <p class="card-text">Bilimsel araştırma metodları ve akademik yapılanma hakkında bilgi edindi. Bu deneyimler, ileride Türk eğitim sisteminin temellerini oluşturacaktı.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture and Art -->
+        <section class="row mb-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">
+                            <i class="fas fa-palette text-primary"></i>
+                            Kültür ve Sanat Merkezleri
+                        </h2>
+                        <div class="row g-4">
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <i class="fas fa-landmark fa-3x text-primary mb-3"></i>
+                                    <h4 class="h6">Louvre Müzesi</h4>
+                                    <p class="small text-muted">Dünya sanat tarihinin en önemli eserlerini inceleme fırsatı</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <i class="fas fa-crown fa-3x text-primary mb-3"></i>
+                                    <h4 class="h6">Versailles Sarayı</h4>
+                                    <p class="small text-muted">Fransız mimarisinin görkemini gözlemleme</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <i class="fas fa-theater-masks fa-3x text-primary mb-3"></i>
+                                    <h4 class="h6">Paris Operası</h4>
+                                    <p class="small text-muted">Batı müziği ve sahne sanatlarını takip</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <i class="fas fa-book fa-3x text-primary mb-3"></i>
+                                    <h4 class="h6">Milli Kütüphane</h4>
+                                    <p class="small text-muted">Bilgi ve kültür arşivlerini inceleme</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- City Planning -->
+        <section class="row mb-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">
+                            <i class="fas fa-city text-primary"></i>
+                            Modern Şehircilik İzlenimleri
+                        </h2>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <img src="/api/placeholder/600/400" class="img-fluid rounded" alt="Paris bulvarları">
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="h4 mb-3">Haussmann'ın Paris'i</h3>
+                                <p>Baron Haussmann'ın modern şehir planlaması, geniş bulvarları ve parkları, Mustafa Kemal'in şehircilik anlayışını derinden etkiledi.</p>
+                                <div class="list-group">
+                                    <div class="list-group-item border-0">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Geniş ve düzenli bulvarlar
+                                    </div>
+                                    <div class="list-group-item border-0">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Modern ulaşım sistemi
+                                    </div>
+                                    <div class="list-group-item border-0">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Parklar ve yeşil alanlar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Life -->
+        <section class="row mb-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">
+                            <i class="fas fa-users text-primary"></i>
+                            Sosyal Yaşam ve Modernite
+                        </h2>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card h-100 bg-light border-0">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-female fa-3x text-primary mb-3"></i>
+                                        <h4 class="h5">Kadın Hakları</h4>
+                                        <p class="small">Kadınların sosyal hayattaki aktif rolü ve eğitim hakları</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 bg-light border-0">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-balance-scale fa-3x text-primary mb-3"></i>
+                                        <h4 class="h5">Hukuk Sistemi</h4>
+                                        <p class="small">Laik hukuk sistemi ve vatandaşlık hakları</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 bg-light border-0">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-newspaper fa-3x text-primary mb-3"></i>
+                                        <h4 class="h5">Basın Özgürlüğü</h4>
+                                        <p class="small">Özgür basın ve düşünce hayatı</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Posts -->
+        <section class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Diğer Şehir Ziyaretleri</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="/api/placeholder/800/400" class="card-img-top" alt="Berlin">
+                    <div class="card-body">
+                        <h3 class="h5">Berlin'de Askeri İncelemeler</h3>
+                        <p class="card-text">Alman ordusunun modernizasyonu ve askeri teknoloji...</p>
+                        <a href="berlin.html" class="btn btn-outline-primary">
+                       

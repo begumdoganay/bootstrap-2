@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofya'da Diplomasi Yılları | Atatürk'ün Avrupa Seyahatleri</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/api/placeholder/1920/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .diplomatic-card {
+            transition: transform 0.3s ease;
+            border-left: 4px solid #0d6efd;
+        }
+        .diplomatic-card:hover {
+            transform: translateY(-5px);
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #dee2e6;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #0d6efd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Atatürk'ün Avrupa Seyahatleri</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sofya.html">Sofya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="berlin.html">Berlin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="viyana.html">Viyana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="paris.html">Paris</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="karlsbad.html">Karlsbad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero-header mb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Ana Sayfa</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Sofya</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 mb-3">Sofya'da Diplomasi Yılları</h1>
+                    <div class="text-white-50">
+                        <i class="fas fa-calendar-alt me-2"></i>1913-1915
+                        <i class="fas fa-clock ms-3 me-2"></i>Okuma Süresi: 12 dakika
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <span class="badge bg-primary p-3 rounded-pill">
+                        <i class="fas fa-map-marker-alt me-2"></i>Sofya, Bulgaristan
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <!-- Introduction -->
+        <section class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card border-0 shadow-sm">
+                    <img src="/api/placeholder/800/400" class="card-img-top" alt="20. yüzyılın başlarında Sofya şehir merkezi">
+                    <div class="card-body">
+                        <p class="lead">1913 yılında, henüz 32 yaşındayken Sofya'ya askeri ataşe olarak atanan Mustafa Kemal, burada ilk diplomatik görevine başladı. Balkan Savaşları sonrası dönemde gerçekleşen bu görev, onun uluslararası diplomasi alanındaki ilk deneyimi olacaktı.</p>
+                        
+                        <div class="alert alert-primary mt-4">
+                            <h5 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Görev Süresi: Önemli Noktalar</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-check-circle me-2"></i>Askeri Ataşelik görevi (1913-1915)</li>
+                                <li><i class="fas fa-check-circle me-2"></i>Balkan coğrafyasının siyasi durumunu gözlemleme</li>
+                                <li><i class="fas fa-check-circle me-2"></i>Uluslararası diplomasi deneyimi</li>
+                                <li><i class="fas fa-check-circle me-2"></i>Modern Avrupa yaşamıyla tanışma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diplomatic Mission -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-handshake text-primary"></i>
+                Diplomatik Görev ve Sorumluluklar
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm diplomatic-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-file-signature fa-2x text-primary me-3"></i>
+                                <h3 class="h4 mb-0">Resmi Görevler</h3>
+                            </div>
+                            <p>Osmanlı İmparatorluğu'nun Sofya Askeri Ataşesi olarak diplomatik raporlar hazırladı ve askeri gelişmeleri takip etti.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Diplomatik yazışmalar</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Askeri raporlar</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Stratejik analizler</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm diplomatic-card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-users fa-2x text-primary me-3"></i>
+                                <h3 class="h4 mb-0">Diplomatik İlişkiler</h3>
+                            </div>
+                            <p>Bulgar devlet adamları ve yabancı diplomatlarla görüşmeler yaparak uluslararası ilişkiler ağı kurdu.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Resmi görüşmeler</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Diplomatik resepsiyonlar</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Uluslararası temaslar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="mb-5">
+            <div class="col-lg-8 mx-auto">
+                <div class="card bg-primary text-white border-0 shadow">
+                    <div class="card-body p-4">
+                        <i class="fas fa-quote-left fa-2x mb-3"></i>
+                        <p class="lead font-italic">"Sofya'daki görevim, uluslararası diplomasinin inceliklerini öğrenmem açısından çok değerli bir tecrübe oldu."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Balkan Politics -->
+        <section class="mb-5">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">
+                        <i class="fas fa-globe-europe text-primary"></i>
+                        Balkan Politikaları ve Gözlemler
+                    </h2>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="/api/placeholder/600/400" class="img-fluid rounded" alt="Balkan haritası">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h4 mb-3">Siyasi Atmosfer</h3>
+                            <p class="text-muted">Balkan Savaşları sonrası dönemde bölgenin siyasi durumunu yakından gözlemleme fırsatı buldu. Bu dönemde edindiği tecrübeler, ileride Türkiye Cumhuriyeti'nin Balkan politikalarının şekillenmesinde önemli rol oynayacaktı.</p>
+                            <div class="list-group">
+                                <div class="list-group-item border-0 ps-0">
+                                    <i class="fas fa-check text-success me-2"></i>Uluslararası ilişkiler dinamikleri
+                                </div>
+                                <div class="list-group-item border-0 ps-0">
+                                    <i class="fas fa-check text-success me-2"></i>Bölgesel güç dengeleri
+                                </div>
+                                <div class="list-group-item border-0 ps-0">
+                                    <i class="fas fa-check text-success me-2"></i>Etnik ve kültürel yapı
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social and Cultural Life -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">
+                <i class="fas fa-theater-masks text-primary"></i>
+                Sosyal ve Kültürel Hayat
+            </h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-glass-cheers fa-3x text-primary mb-3"></i>
+                            <h4 class="h5">Sosyal Çevre</h4>
+                            <p class="text-muted">Diplomatik resepsiyonlar ve balolar ile sosyal ağını genişletti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-landmark fa-3x text-primary mb-3"></i>
+                            <h4 class="h5">Kültürel Etkinlikler</h4>
+                            <p class="text-muted">Tiyatro ve konser programlarına katılarak kültür hayatını tanıdı.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="fas fa-comments fa-3x text-primary mb-3"></i>
+                            <h4 class="h5">Entelektüel Ortam</h4>
+                            <p class="text-muted">Aydınlarla fikir alışverişinde bulunarak vizyonunu geliştirdi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern City -->
+        <section class="bg-light py-5 rounded">
+            <div class="container">
+                <h2 class="text-center mb-4">
+                    <i class="fas fa-city text-primary"></i>
+                    Şehir ve Modernleşme
+                </h2>
+                <div class="row
