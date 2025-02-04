@@ -1,4 +1,4 @@
-# Atatürk'ün Avrupa Seyahatleri 🌍
+#                     Atatürk'ün Avrupa Seyahatleri 🌍
 
 <div align="center">
 
